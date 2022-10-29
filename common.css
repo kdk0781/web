@@ -82,6 +82,8 @@ select{max-width:100%;border:1px solid #e2e2e2;background:#fff;border-radius:0;}
 .btn-wrap {text-align: center; width:100%;  background:#9B9B9B; padding:20px 30px; border-radius:100px; color:#fff; margin:50px 0; box-sizing:border-box;}
 .btn-wrap a {display:block;}
 
+.map_btn a {width:40%; display:inline-block;}
+
 .map_head {text-align:center; font-weight:bold; }
 
 	@media all and (min-width:320px) {
