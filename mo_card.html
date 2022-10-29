@@ -83,7 +83,7 @@
 					var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 						mapOption = { 
 							center: new kakao.maps.LatLng(37.604645887790355, 127.15595356798397), // 지도의 중심좌표 클릭한 위치에 마커표시
-							level: 3 // 지도의 확대 레벨
+							level: 5 // 지도의 확대 레벨
 						};
 
 					var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
@@ -114,6 +114,10 @@
 						
 					});
 				</script>
+				<div class="button_zone">
+					<a href="#" >약도보기</a>
+					<a href="https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,534428,1140329&rt1=&rt2=%EC%9B%A8%EB%94%A9%EB%9D%BC%ED%8F%AC%EC%97%A0&rtIds=,446929781" target="_blank">길찾기</a>
+				</div>
 
 			</div>
 		</div>
