@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<meta name="author" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="common.css" media="all">
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+</head>
+	<title>모바일 청첩장</title>
+
+<body>
+	<div id="wrap">
+		<div class="wrapper">
+			<div class="card_head">
+				<div class="day">D-DAY</div>
+				<div id="d_day" style="font-size:20px; font-weight:bold; color:red;"></div>
+			</div>
+			<div class="card_body">
+				<div class="h1">
+					<img src="h1_title.png" alt="" />
+				</div>
+				<div class="pic">
+					<img src="https://10am.co.kr/data/file/mi/thumbs/2038526203_sudn7oBy_1.jpg" alt="" />
+				</div>
+				<div class="txt">
+					<div class="txt_h1">허서준 (허상구) <span class="hreat">♥</span> 강혜연</div>
+					<div class="txt_h2">2022.11.05 토요일 오후 1:00</div>
+					<div class="txt_h2">웨딩라포엠(구, 더컨벤션) 8층 라포엠홀</div>
+				</div>
+				<div class="pic">
+					<img src="body_banner.png" alt="" />
+				</div>
+				<div class="txt_invite">
+					<div class="txt_invite_head">초대의 글</div>
+						<p>소망이 축복속에서 기쁨으로 이루어지는 날</p>
+						<p>저희 두 사람이 하나가 될 뜻 깊은 날을</p>
+						<p>맞게 되었습니다.</p>
+						<p>소중하고 힘찬 내디딤이 될 수 있도록</p>
+						<p>꼭 오셔서 지켜봐 주시면 감사하겠습니다.</p>
+					<div class="txt_invite_foot">
+						<p>허강진· 원종수의 장남 허서준(허상구)</p>
+						<p>강희열·(故)한기순의 차녀 강혜연</p>
+					</div>
+					<div class="txt_invite_foot">
+						<p>2022년 11월 05일(토) 오후 1:00</p>
+						<p>웨딩라포엠(구, 더컨벤션) 8층 라포엠홀</p>
+					</div>
+				</div>
+				<div class="button_zone">
+					<a href="#pop_info_1" class="btn_open">신랑측에 연락하기</a>
+					<a href="#pop_info_2" class="btn_open">신부측에 연락하기</a>
+				</div>
+
+				<div id="contents">
+					<div id="js-load" class="main">
+						<ul class="lists">
+							<li class="lists__item js-load pic"><img src="pic01.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic02.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic03.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic04.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic05.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic06.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic01.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic02.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic03.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic04.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic05.jpg" alt="" /></li>
+							<li class="lists__item js-load pic"><img src="pic06.jpg" alt="" /></li>
+						</ul>
+					<div id="js-btn-wrap" class="btn-wrap"> <a href="javascript:;" class="button">더보기</a> </div>
+					</div>
+				</div>
+
+				<!-- 지도를 표시할 div 입니다 -->
+				<div id="map" style="width:100%;height:350px;"></div>
+
+				<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0d73ddfb5f8bb347e5bd40ea297644cb"></script>
+				<script>
+				var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+					mapOption = { 
+						center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+						level: 3 // 지도의 확대 레벨
+					};
+
+				// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+				var map = new kakao.maps.Map(mapContainer, mapOption); 
+				</script>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="pop_info_1" class="pop_wrap" style="display:none;">
+		<div class="pop_inner">
+			<p class="dsc">신랑측에 연락하기</p>
+			<div class="family">
+				<ul>
+					<li><a>신랑 허서준</a></li>
+					<li><a href="tel:01012345678">전화하기</a></li>
+					<li><a href="sms:01012345678">문자하기</a></li>
+				</ul>
+				<ul>
+					<li><a>신랑 허서준</a></li>
+					<li><a href="tel:01012345678">전화하기</a></li>
+					<li><a href="sms:01012345678">문자하기</a></li>
+				</ul>
+				<ul>
+					<li><a>신랑 허서준</a></li>
+					<li><a href="tel:01012345678">전화하기</a></li>
+					<li><a href="sms:01012345678">문자하기</a></li>
+				</ul>
+				<ul>
+					<li><a>신랑 허서준</a></li>
+					<li><a href="tel:01012345678">전화하기</a></li>
+					<li><a href="sms:01012345678">문자하기</a></li>
+				</ul>
+			</div>
+			<button type="button" class="btn_close">닫기</button>
+		</div>
+	</div>
+
+	<div id="pop_info_2" class="pop_wrap" style="display:none;">
+		<div class="pop_inner">
+			<p class="dsc">신부 강혜연</p>
+			<div class="family">
+				<ul>
+					<li><a>신부 강혜연</a></li>
+					<li><a href="tel:01012345678">전화하기</a></li>
+					<li><a href="sms:01012345678">문자하기</a></li>
+				</ul>
+				<ul>
+					<li><a>신부 강혜연</a></li>
+					<li><a href="tel:01012345678">전화하기</a></li>
+					<li><a href="sms:01012345678">문자하기</a></li>
+				</ul>
+				<ul>
+					<li><a>신부 강혜연</a></li>
+					<li><a href="tel:01012345678">전화하기</a></li>
+					<li><a href="sms:01012345678">문자하기</a></li>
+				</ul>
+
+			</div>
+			<button type="button" class="btn_close">닫기</button>
+		</div>
+	</div>
+
+</body>
+
+
+</html>
